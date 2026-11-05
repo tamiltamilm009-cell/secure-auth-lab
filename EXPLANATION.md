@@ -31,7 +31,7 @@ Without `INSECURE_LOCAL_COOKIES=1` the cookie is `Secure` (HTTPS only), which is
    - Max 5 failed logins per 15 minutes per IP+email, then HTTP `429` with `Retry-After`.
    - Wrong email and wrong password both return the same `401 {"error": "Invalid credentials"}`.
    - A dummy hash check runs for unknown emails so response timing doesn't reveal valid accounts.
-4. **Submission**: this repository link + this README.
+4. **Submission**: this repository link + this EXPLANATION.md.
 
 ## Optional upgrade: tests
 `tests/test_auth.py` covers valid login, hashed storage, input validation, cookie flags, logout, expired/invalid/tampered sessions, generic errors, brute-force lockout, and counter reset.
